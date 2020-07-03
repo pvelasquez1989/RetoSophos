@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="3" failures="0" name="Sophos Challenge refers to MetroCencosud page" skipped="0" tests="3" time="66.57" timestamp="2020-03-21 01:09:15"><testcase name="Successful Case"><error message="Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Timed out waiting for driver server to start.&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'CPX-38INMCYZ7HW', ip: '192.168.1.55', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: driver.version: ProvideNewDriver). See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Timed out waiting for driver server to start.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CPX-38INMCYZ7HW', ip: '192.168.1.55', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: ProvideNewDriver). See below for more details.</error><system-err>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (Timed out waiting for driver server to start.
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'CPX-38INMCYZ7HW', ip: '192.168.1.55', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: ProvideNewDriver). See below for more details.&#13;
-co.com.metrocencosud.retosophos.stepdefinitions.MetroCencosudStepDefinitions.anUserEntersTheMetroCencosudPage(MetroCencosudStepDefinitions.java:27)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Sophos Challenge refers to MetroCencosud page" skipped="0" tests="1" time="25.04" timestamp="2020-07-02 11:30:53"><testcase name="Successful Case"/></testsuite>

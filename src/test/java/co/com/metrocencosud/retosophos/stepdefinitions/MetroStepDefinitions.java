@@ -9,6 +9,7 @@ import cucumber.api.java.en.When;
 import cucumber.api.junit.Cucumber;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
@@ -20,27 +21,24 @@ public class MetroStepDefinitions {
 
     @Managed(driver = "chrome")
     private WebDriver browser;
-
     private Actor user = Actor.named("User");
-
     @Before
-    public void init() {
-        OnStage.setTheStage(OnlineCast.ofStandardActors());
+    public void setup() {
+        user.can(BrowseTheWeb.with(browser));
     }
-
-
 
 
     @Given("^an user enters the MetroCencosud page$")
     public void anUserEntersTheMetroCencosudpage() {
 
-       OnStage.theActorCalled("user").can(BrowseTheWeb.with((WebDriver) prueba.Page()));
+        user.wasAbleTo(Open.url("https://www.metro.pe/especiales/cybermetro"));
+
     }
 
 
     @When("^the user search a product$")
     public void theUserSearchAProduct() throws Exception {
-
+     Thread.sleep(10000);
     }
 
     @Then("^the user check the product on basket$")
