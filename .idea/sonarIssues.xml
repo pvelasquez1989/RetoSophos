@@ -3,7 +3,37 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/serenity.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/metrocencosud/retosophos/tasks/SelectArticle.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/metrocencosud/retosophos/userinterface/HomePage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/metrocencosud/retosophos/userinterface/SelectPage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/co/com/metrocencosud/retosophos/runners/MetroCencosudRunner.java">
           <value>
             <set />
           </value>
@@ -14,6 +44,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/resources/features/metrocencosud.feature">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/RetosAutomatizacionS-master/Reto Sophos Gradle/.gradle/vcs-1/gc.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/RetosAutomatizacionS-master/Reto Sophos Gradle/serenity.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/RetosAutomatizacionS-master/Reto Sophos Gradle/src/main/java/co/com/example/retosophos/userinterfaces/SearchPage.java">
           <value>
             <set />
           </value>

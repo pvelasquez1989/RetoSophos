@@ -1,7 +1,6 @@
 package co.com.metrocencosud.retosophos.stepdefinitions;
 
-import co.com.metrocencosud.retosophos.tasks.prueba;
-import co.com.metrocencosud.retosophos.userinterface.HomePage;
+
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -10,11 +9,12 @@ import cucumber.api.junit.Cucumber;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
-import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
+import java.util.Map;
+import static co.com.metrocencosud.retosophos.tasks.SelectArticle.selectsArticle;
+
 
 @RunWith(Cucumber.class)
 public class MetroStepDefinitions {
@@ -24,6 +24,7 @@ public class MetroStepDefinitions {
     private Actor user = Actor.named("User");
     @Before
     public void setup() {
+
         user.can(BrowseTheWeb.with(browser));
     }
 
@@ -37,12 +38,14 @@ public class MetroStepDefinitions {
 
 
     @When("^the user search a product$")
-    public void theUserSearchAProduct() throws Exception {
-     Thread.sleep(10000);
+    public void theUserSearchAProduct(Map<String, String> dataTable)  {
+     user.attemptsTo(selectsArticle(Integer.parseInt(dataTable.get("number")), dataTable.get("article")));
+
+
     }
 
     @Then("^the user check the product on basket$")
-    public void theUserCheckTheProductOnBasket() throws Exception {
+    public void theUserCheckTheProductOnBasket() {
 
     }
 }
