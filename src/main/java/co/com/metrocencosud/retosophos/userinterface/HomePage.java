@@ -10,4 +10,5 @@ public class HomePage extends PageObject {
 
     public static final Target OPTION_SEARCH_ARTICLE = Target.the("Option search article").located(By.id("search-autocomplete-input"));
 
+    public static final Target QUANTITY_ITEMS = Target.the("Quantity Items").locatedBy("//*[@class='total-items-title']");
 }

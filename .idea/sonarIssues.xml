@@ -18,6 +18,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/metrocencosud/retosophos/questions/StatusTheArticleOnBasket.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/co/com/metrocencosud/retosophos/tasks/SelectArticle.java">
           <value>
             <set />
@@ -29,6 +34,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/co/com/metrocencosud/retosophos/userinterface/SelectPage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/co/com/metrocencosud/retosophos/util/SwitchWindow.java">
           <value>
             <set />
           </value>

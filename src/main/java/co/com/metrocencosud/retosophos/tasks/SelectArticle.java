@@ -8,7 +8,6 @@ import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
-import net.serenitybdd.screenplay.actions.ScrollTo;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 
@@ -41,8 +40,9 @@ public class SelectArticle implements Task {
       if (number > 1){
           for (int i =1; i < number; i++){
          actor.attemptsTo(
-                 Scroll.to(SHOPPING_BASKET),
+
                  WaitUntil.the(SHOPPING_BASKET, isVisible()),
+                 Scroll.to(SHOPPING_BASKET),
                  Click.on(SHOPPING_BASKET)
          );
           }

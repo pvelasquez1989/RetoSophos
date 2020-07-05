@@ -14,6 +14,8 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import java.util.Map;
 import static co.com.metrocencosud.retosophos.tasks.SelectArticle.selectsArticle;
+import static co.com.metrocencosud.retosophos.questions.StatusTheArticleOnBasket.theArticleOnBasket;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 
 @RunWith(Cucumber.class)
@@ -45,7 +47,7 @@ public class MetroStepDefinitions {
     }
 
     @Then("^the user check the product on basket$")
-    public void theUserCheckTheProductOnBasket() {
-
+    public void theUserCheckTheProductOnBasket(Map<String,String> dataTable) {
+        user.should(seeThat(theArticleOnBasket(dataTable.get("validation"))));
     }
 }

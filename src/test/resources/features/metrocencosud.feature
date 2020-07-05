@@ -8,15 +8,17 @@ Feature: Sophos Challenge refers to MetroCencosud page
 
     Given an user enters the MetroCencosud page
     When the user search a product
-      | number   | <number>   |
-      | article   | <article>   |
+      | number   | <number>     |
+      | article  | <article>   |
 
     Then the user check the product on basket
-
+      | validation   | <validation>   |
 
   Examples:
-    | number   | article      |
-    | 1        | Lavadora     |
+    | number   | article        | validation     |
+    | 1        | Lavadora       | Tienes 1 Items |
+
+
 
 
 
