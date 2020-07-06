@@ -1,12 +1,14 @@
 package co.com.metrocencosud.retosophos.userinterface;
 
-import javafx.scene.control.TableRow;
 import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.targets.Target;
-
 import java.util.List;
+
+/**
+ * En esta clase se encuentra mapeados los elementos para agregar el producto al carrito de compras
+ */
 
 public class SelectPage extends PageObject {
 

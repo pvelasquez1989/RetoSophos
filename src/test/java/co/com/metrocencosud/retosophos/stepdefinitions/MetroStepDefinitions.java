@@ -1,6 +1,4 @@
 package co.com.metrocencosud.retosophos.stepdefinitions;
-
-
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -12,7 +10,9 @@ import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Managed;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
+
 import java.util.Map;
+
 import static co.com.metrocencosud.retosophos.tasks.SelectArticle.selectsArticle;
 import static co.com.metrocencosud.retosophos.questions.StatusTheArticleOnBasket.theArticleOnBasket;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
@@ -23,13 +23,14 @@ public class MetroStepDefinitions {
 
     @Managed(driver = "chrome")
     private WebDriver browser;
+
     private Actor user = Actor.named("User");
+
     @Before
     public void setup() {
 
         user.can(BrowseTheWeb.with(browser));
     }
-
 
     @Given("^an user enters the MetroCencosud page$")
     public void anUserEntersTheMetroCencosudpage() {
@@ -47,7 +48,7 @@ public class MetroStepDefinitions {
     }
 
     @Then("^the user check the product on basket$")
-    public void theUserCheckTheProductOnBasket(Map<String,String> dataTable) {
+    public void theUserCheckTheProductOnBasket(Map<String, String> dataTable) {
         user.should(seeThat(theArticleOnBasket(dataTable.get("validation"))));
     }
 }

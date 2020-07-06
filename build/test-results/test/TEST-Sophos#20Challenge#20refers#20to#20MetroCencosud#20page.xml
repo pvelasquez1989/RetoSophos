@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Sophos Challenge refers to MetroCencosud page" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-05T01:57:24" hostname="CPX-38INMCYZ7HW" time="55.878">
+<testsuite name="Sophos Challenge refers to MetroCencosud page" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-07-06T02:51:31" hostname="CPX-38INMCYZ7HW" time="27.071">
   <properties/>
-  <testcase name="Successful Case" classname="Sophos Challenge refers to MetroCencosud page" time="55.878"/>
-  <system-out><![CDATA[Tienes 1 items
-]]></system-out>
-  <system-err><![CDATA[Jul 04, 2020 8:57:26 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <testcase name="Successful Case" classname="Sophos Challenge refers to MetroCencosud page" time="27.071"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jul 05, 2020 9:51:32 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --incognito,--lang=es,--dis..., goog:chromeOptions: {args: [--incognito, --lang=es, --disable-popup-blocking, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --disable-notifications, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 25598
+Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 2078
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 04, 2020 8:57:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 05, 2020 9:51:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  

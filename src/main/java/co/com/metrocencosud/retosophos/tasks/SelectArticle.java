@@ -1,6 +1,5 @@
 package co.com.metrocencosud.retosophos.tasks;
 
-
 import co.com.metrocencosud.retosophos.userinterface.SelectPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -11,12 +10,14 @@ import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import org.openqa.selenium.Keys;
 
-
 import static co.com.metrocencosud.retosophos.userinterface.HomePage.*;
 import static co.com.metrocencosud.retosophos.userinterface.SelectPage.SEE_BASKET;
 import static co.com.metrocencosud.retosophos.userinterface.SelectPage.SHOPPING_BASKET;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
+/**
+ * Esta clase se encarga de buscar el producto y agregarlo al carrito de compras
+ */
 
 public class SelectArticle implements Task {
     private String article;
@@ -53,6 +54,5 @@ public class SelectArticle implements Task {
     }
     public static SelectArticle selectsArticle(int number, String article){
         return Tasks.instrumented(SelectArticle.class, number, article);
-
     }
 }
